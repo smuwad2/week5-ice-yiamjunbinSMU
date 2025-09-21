@@ -41,6 +41,12 @@
             }
 
             function createTable(dataObj) {
+                console.log("=== DEBUGGING DATA STRUCTURE ===");
+                console.log("Full dataObj:", dataObj);
+                console.log("Records array:", dataObj.records);
+                console.log("First record:", dataObj.records[0]);
+                console.log("Keys from first record:", Object.keys(dataObj.records[0]));
+                
                 const resultDiv = document.getElementById("result");
                 // Clear previous content
                 while (resultDiv.firstChild) {
